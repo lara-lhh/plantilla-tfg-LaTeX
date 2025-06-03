@@ -11,5 +11,5 @@ Abre y compila `main.tex`.
 La forma de trabajo es: Escribes capítulos correspondientes a las distintas partes del trabajo en archivos `.tex` y luego los incluyes en el orden correspondiente en el `main.tex` usando:
 
 ```latex
-\input{capitulos/mi_capitulo}
+\input{Capitulos/mi_capitulo}
 ```

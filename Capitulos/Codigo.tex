@@ -1,0 +1,24 @@
+\section{Prueba códigos}
+
+\begin{lstlisting}[style={RubyStyle}, label={lst:condidion}, caption={Condición en Sonic Pi}, captionpos=b]
+use_synth :piano 
+tiempo = 0
+
+16.times do
+  tiempo = tiempo + 1 #incremento del tiempo en una unidad  
+  if tiempo % 4 == 0  #cada 4 tiempos toca la nota g4
+    play :g4
+  else
+    play :c4
+  end
+  sleep 1
+end
+\end{lstlisting}
+
+
+\begin{lstlisting}[style={gibber}, label={lst:modulacion}, caption={Modulación de frecuencia usando \texttt{gen()} en \textit{Gibber}}, captionpos=b]
+s = Synth({ gain:.1 }).connect()
+mod = gen( cycle( beats(8)*20 )* 20 )
+mod.connect( s.frequency )
+s.note.seq( [0,2,4,5], 1/4 )
+\end{lstlisting}

@@ -1,0 +1,28 @@
+\section{Gráficos}
+
+\begin{tikzpicture}[node distance=0.8cm and 0.6cm,
+  every node/.style={draw, fill=blue!10, align=center, minimum width=5cm, minimum height=1.2cm}]
+    \node(central) {Diseño de\\ sonido};
+    
+    \node (sintesis)[above left=of central]  {Síntesis};
+    \node (procesamiento) [above right=of central] {Procesamiento\\ digital};
+    \node (musica) [ below left=of central]  {Música};
+    \node (espacio) [ below right=of central] {Espacio};
+    
+    \draw (sintesis) -- (central);
+    \draw (procesamiento) -- (central);
+    \draw (musica) -- (central);
+    \draw (espacio) -- (central);
+\end{tikzpicture}
+
+
+
+
+
+    
+        
+
+
+
+
+

@@ -1,0 +1,13 @@
+\chapter{Introducción}
+
+El diseño de sonido involucra técnicas como la \gls{sintesis}, el muestreo o el procesamiento digital. Como dice \cite{bovermannComputation}
+\textcite{bovermannComputation}
+% \parencite[p. 520]{bovermannComputation}
+
+% \parencite[]{} para citas textuales
+% \textcite{} para referirse al autor en el texto
+% \citetitle{} para referirse al título del artículo
+
+La Transformada Discreta de Fourier (DFT) descompone una señal discreta $x[n]$ en una suma de componentes sinusoidales complejas. 
+$$X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j \frac{2\pi}{N}kn} $$
+La \textit{Fast Fourier Transform (FFT)} es un algoritmo que permite calcular esta expresión de forma computacionalmente eficiente, reduciendo el \gls{coste} de $\mathcal{O}(N^2)$ a $\mathcal{O}(N \log N)$.

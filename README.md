@@ -8,7 +8,7 @@ donde no necesitas instalar nada. O localmente con cualquier otro  editor (TeXSt
 instalar los paquetes requeridos.
 Abre y compila `main.tex`.
 
-La forma de trabajo es: Escribes capítulos correspondientes a las distintas partes del trabajo en archivos `.tex` y luego los incluyes en el orden correspondiente en el `main.tex` usando:
+La forma de trabajo es: Escribir capítulos correspondientes a las distintas partes del trabajo en archivos `.tex` y luego incluirlos en el orden correspondiente en el `main.tex` para que queden seguidos y maquetados en el documento usando:
 
 ```latex
 \input{Capitulos/mi_capitulo}
